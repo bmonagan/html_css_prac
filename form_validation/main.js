@@ -1,3 +1,4 @@
+const form = document.querySelector('.standard');
 const email = document.querySelector('#email');
 
 email.addEventListener('input', function (event) {
@@ -9,3 +10,10 @@ email.addEventListener('input', function (event) {
   } else {
     email.setCustomValidity('');
 }});
+
+form.addEventListener('submit', function (event) {
+  if (!form.checkValidity()) {
+    event.preventDefault();
+    form.reportValidity();
+  }
+});
