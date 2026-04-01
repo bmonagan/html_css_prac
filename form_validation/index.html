@@ -18,6 +18,16 @@
             <option value="C.A.R">C.A.R</option>
         </select>
 
+        <label for="postal-code">Postal Code</label>
+        <input
+          type="text"
+          name="postalCode"
+          autocomplete="postal-code"
+          inputmode="numeric"
+          pattern="[0-9]{5}(-[0-9]{4})?"
+          maxlength="10"
+          required
+        >
         <button type = "submit">Submit</button>
     </form>
     <script src="main.js"></script>
