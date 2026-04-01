@@ -33,6 +33,7 @@ phoneNumber.addEventListener('input', function (event) {
     form.reportValidity();
   }
   else {
+    event.preventDefault();
     alert('Form submitted successfully! High five!');
   }
 });
