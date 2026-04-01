@@ -9,7 +9,13 @@
 <body>
     <form action="POST" class="standard" novalidate>
         <label for="email">Email</label>
-        <input type="email" id ="email" name="email" autocomplete="email">
+        <input 
+            type="email" 
+            id ="email" 
+            name="email" 
+            autocomplete="email"
+            placeholder="johnsmith@email.com"
+        >
         
         <select name="country" id="country" autocomplete="country">
             <option value="">Select</option>
@@ -27,6 +33,7 @@
             inputmode="numeric"
             pattern="[0-9]{5}(-[0-9]{4})?"
             maxlength="10"
+            placeholder="01234"
             required
         >
         <label for="phone-number">Phone Number</label>
