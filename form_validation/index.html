@@ -20,14 +20,28 @@
 
         <label for="postal-code">Postal Code</label>
         <input
-          type="text"
-          name="postalCode"
-          autocomplete="postal-code"
-          inputmode="numeric"
-          pattern="[0-9]{5}(-[0-9]{4})?"
-          maxlength="10"
-          required
+            type="text"
+            d="postal-code"
+            name="postalCode"
+            autocomplete="postal-code"
+            inputmode="numeric"
+            pattern="[0-9]{5}(-[0-9]{4})?"
+            maxlength="10"
+            required
         >
+        <label for="phone-number">Phone Number</label>
+        <input
+            type="text"
+            id="phone-number"
+            name="phoneNumber"
+            autocomplete="tel"
+            inputmode="tel"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+            maxlength="12"
+            placeholder="123-456-7890"
+            required
+        >
+        
         <button type = "submit">Submit</button>
     </form>
     <script src="main.js"></script>
