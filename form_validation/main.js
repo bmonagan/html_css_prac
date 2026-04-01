@@ -17,3 +17,12 @@ form.addEventListener('submit', function (event) {
     form.reportValidity();
   }
 });
+
+const postalCode = document.querySelector('#postal-code');
+
+postalCode.addEventListener('input', function (event) {
+    if (postalCode.validity.patternMismatch) {
+    postalCode.setCustomValidity('Please enter a valid postal code!');
+    } else {
+    postalCode.setCustomValidity('');
+    }});
