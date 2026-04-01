@@ -26,3 +26,12 @@ postalCode.addEventListener('input', function (event) {
     } else {
     postalCode.setCustomValidity('');
     }});
+
+const phoneNumber = document.querySelector('#phone-number');
+
+phoneNumber.addEventListener('input', function (event) {
+  if (phoneNumber.validity.patternMismatch) {
+  phoneNumber.setCustomValidity('Please enter a valid phone number! Use 123-456-7890.');
+  } else {
+  phoneNumber.setCustomValidity('');
+  }});
